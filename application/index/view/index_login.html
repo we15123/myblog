@@ -1,0 +1,35 @@
+{include file='common/head' /}
+<body>
+<!--首页-->
+<div class="container">
+    <div class=row>
+        <div class="col-md-12">
+            <!--导航-->
+            {include file='common/index' /}
+            <!--导航结束-->
+        </div>
+    </div>
+
+    <!--表单-->
+    <form class="form-horizontal col-sm-5 col-sm-offset-3" action="{:url('index/login')}" method="post">
+        <div class="form-group">
+            <label for="inputEmail3" class="col-sm-2 control-label">用户名</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="inputEmail3" name="username" placeholder="用户名">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputPassword3" class="col-sm-2 control-label">密码</label>
+            <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword3" name="password" placeholder="密码">
+            </div>
+        </div>
+        <div class="col-sm-offset-5 col-sm-10">
+            <button type="submit" class="btn btn-primary">登录</button>
+        </div>
+    </form>
+
+    <!--表单结束-->
+</div>
+</body>
+</html>

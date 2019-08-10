@@ -1,0 +1,35 @@
+{include file='common/head' /}
+<body>
+<!--首页-->
+<div class="container">
+    <div class=row>
+        <div class="col-md-12">
+            <!--导航-->
+            {include file='common/index' /}
+            <!--导航结束-->
+        </div>
+    </div>
+
+    <div class="row">
+        <!--左边文章-->
+        <div class="col-md-8 ">
+            <div class="page-header" style="width: 90%">
+                <h2>全部博客</h2>
+            </div>
+            <div style="float: left; width: 90%">
+                <img class="img-rounded" src="/blog/public/static/1.png" alt="照片位置" style="margin-right: 40px;float:left;width:100px;height: 85px">
+                <h4><a href="">标题</a></h4>
+                <p>发布者：yue &nbsp;&nbsp;&nbsp;&nbsp;发布时间:2019-08-10</p>
+                <div>文章内容</div>
+                <hr>
+            </div>
+
+        </div>
+        <!--结束文章-->
+        <!--右边热门文章-->
+        {include file='common/right' /}
+        <!--右边结束热门文章-->
+    </div>
+</div>
+</body>
+</html>
